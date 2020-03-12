@@ -50,7 +50,7 @@ public class CustomView extends View {
     private int measureHeight(int heightMeasureSpec,int widthMeasureSpec ){
         int result = 0;
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
-        int heightSize = MeasureSpec`.getSize(heightMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
         if(heightMode == MeasureSpec.EXACTLY){
             result = heightSize;
         }
