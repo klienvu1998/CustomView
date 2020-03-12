@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class CustomView extends View {
 
-    final static String CONTENT="Android offers a sophisticated and powerful componentize model for building your UI," +
+    private final static String CONTENT="Android offers a sophisticated and powerful componentize model for building your UI," +
             " based on the fundamental layout classes: View and ViewGroup.";
 
 
@@ -34,7 +34,7 @@ public class CustomView extends View {
         textPaint=new Paint(Paint.ANTI_ALIAS_FLAG);
         squarePaint.setColor(Color.BLUE);
         textPaint.setColor(Color.BLACK);
-        textPaint.setTextSize(40);
+        textPaint.setTextSize(60);
         linesContent = new ArrayList<>();
     }
 
@@ -98,7 +98,7 @@ public class CustomView extends View {
         }
     }
 
-    void StringMeasure(int canvasWidth){
+    private void StringMeasure(int canvasWidth){
         canvasWidth = MeasureSpec.getSize(canvasWidth);
         textPaint.measureText(CONTENT);
         String t=CONTENT;
